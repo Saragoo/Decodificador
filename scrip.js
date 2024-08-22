@@ -44,17 +44,18 @@ function criptografarTexto(texto) {
   }
   
   function exibirTextoNaTela(tag, texto) {
-      let campo = document.querySelector(tag);
-      campo.innerHTML = texto;
-  }
-  
-  function esconder(el){
-      document.getElementById(el).style.display = "none";
-  }
-  
-  function mostrar(el){
-      document.getElementById(el).style.display = "block";
-  }
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+    
+}
+
+function esconder(el){
+    document.getElementById(el).style.display = "none";
+}
+
+function mostrar(el){
+    document.getElementById(el).style.display = "block";
+}
   
   const btn = document.querySelector("#criptografar");
   btn.addEventListener("click", function(e) {
@@ -65,6 +66,8 @@ function criptografarTexto(texto) {
       exibirTextoNaTela('#resultado', textoCriptografado);
       mostrar('btn_copiar')
       mostrar('resultado')
+      inputElement.value = "";
+      
   });
   
   const btn2 = document.querySelector("#descriptografar");
@@ -76,10 +79,14 @@ function criptografarTexto(texto) {
       exibirTextoNaTela('#resultado', textoDescriptografado);
       mostrar('btn_copiar')
       mostrar('resultado')
+      inputElement.value = "";
   });
   
   document.getElementById('btn_copiar').addEventListener('click', clipboardCopy);
-  async function clipboardCopy() {
+
+async function clipboardCopy() {
     let text = document.querySelector("#resultado").value;
     await navigator.clipboard.writeText(text);
+    document.querySelector("#resultado").value = "";
+    
   } 
