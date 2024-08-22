@@ -1,10 +1,10 @@
-<h1 align="center"> Challenge Criptocafor </h1>
+<h1 align="center"> Challenge de Criptografar </h1>
 
 
 Decodificador de texto desenvolvido para o projeto alura. Utilizando HTML, CSS, e JavaScript.
 
 
-Projeto
+## 📁 Projeto
 --index.html
 --css
    style.css
@@ -15,22 +15,22 @@ Projeto
     exclamacao.png
 --scrip.js
 
-Como usar
-  Abra o link
+##  Como usar
+1.  Abra o link
      https://github.com/Saragoo/decodificador
 
- Acesse o arquivo  'index.html' no seu navegador.
+2. Acesse o arquivo  'index.html' no seu navegador.
 
 
- Recursos tecnológicos utilizados no desenvolvimento
+## Recursos tecnológicos utilizados no desenvolvimento
    --HTML
    --CSS
    --JavaScript
 
 
-Principais funções do projeto
-   --Criptografar Texto
-   --Descriptografar Texto
+## ⚙️ Principais funções do projeto
+   -- 🔐 Criptografar Texto
+   -- 🔓 Descriptografar Texto
 
 
-Desenvolvido por Larissa Sarago.
+##  Desenvolvido por Larissa Sarago.
